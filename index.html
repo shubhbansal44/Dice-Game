@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="public/css/input.css" /> -->
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="public/images/dice-favicon.png"
+      type="image/x-icon"
+    />
+    <title>Dice Game</title>
+  </head>
+  <body class="m-0 p-0 overflow-x-hidden bg-cyan-950 h-screen w-screen flex">
+    <div
+      class="h-screen w-full flex flex-col items-center font-mono text-gray-400"
+    >
+      <span class="text-4xl mt-4 md:text-7xl md:mt-8 lg:text-[6rem] lg:mt-10"
+        >🎲Dice Game🎲</span
+      >
+      <span class="text-2xl md:text-5xl lg:text-6xl mt-2 md:mt-6 lg:mt-8"
+        >Start Game</span
+      >
+      <div
+        class="flex flex-col lg:flex-row items-center gap-2 md:gap-4 lg:gap-14 justify-center mt-4 md:mt-6 lg:mt-16"
+      >
+        <div
+          class="js-p flex flex-col gap-1 md:gap-2 lg:gap-5 items-center justify-center"
+        >
+          <img
+            src="public/images/question-mark.png"
+            alt=""
+            class="js-p-img h-40 md:h-56"
+          />
+          <span class="js-p-move text-xl md:text-4xl">Your Dice: N/A</span>
+        </div>
+        <div
+          class="js-c flex flex-col gap-1 md:gap-2 lg:gap-5 items-center justify-center"
+        >
+          <img
+            src="public/images/question-mark.png"
+            alt=""
+            class="js-c-img h-40 md:h-56"
+          />
+          <span class="js-c-move text-xl md:text-4xl">Computer Dice: N/A</span>
+        </div>
+      </div>
+      <button
+        class="h-7 w-28 rounded-md md:rounded-xl md:text-2xl border mt-2 text-black border-black bg-teal-600 bg-opacity-70 hover:bg-opacity-80 hover:shadow-md md:h-11 md:w-44 md:mt-6 lg:mt-10"
+        onclick="play();"
+      >
+        Play
+      </button>
+      <span class="js-results text-xl mt-3 md:mt-5 md:text-4xl lg:mt-8"
+        >Results: N/A</span
+      >
+      <div class="flex flex-col items-center mt-2 md:mt-4 lg:mt-8">
+        <span class="js-score text-lg md:text-2xl lg:text-3xl"
+          >Wins: N/A Losses: N/A Ties: N/A</span
+        >
+        <button
+          class="w-28 h-7 border-black border mt-2 rounded-md md:text-2xl text-black justify-center bg-red-500 bg-opacity-70 hover:bg-opacity-80 hover:shadow-md md:h-11 md:w-44 md:rounded-xl md:mt-4 lg:mt-8"
+          onclick="reset();"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
